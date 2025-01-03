@@ -26,7 +26,8 @@ function Home() {
 
     return(
         <div>
-            ola
+            ola 
+            <p>Seu email: {email}</p>
         </div>
     )
 }
