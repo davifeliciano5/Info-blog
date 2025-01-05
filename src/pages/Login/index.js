@@ -17,7 +17,7 @@ function Login() {
       toast.error("Preencha todos os campos!");
       return;
     }
-
+    
     await signInWithEmailAndPassword(auth, loginEmail, loginPassword)
       .then((user) => {
         console.log(user);
