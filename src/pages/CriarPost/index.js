@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { collection, addDoc } from "firebase/firestore"; 
 import { db } from "../../firebaseConnection";
+import "./cria.css"
 
 function Cria() {
   const [email, setEmail] = useState(); // Correção do useState
@@ -52,18 +53,24 @@ function Cria() {
       <h1>Olá!</h1>
       {nome ? <p>Seu email: {nome}</p> : <p>Carregando...</p>}
 
-      <div>
-        <label>Título</label>
-        <input type="text" 
-        value={titulo}
-        onChange={(evento) => setTitulo(evento.target.value)}
-        /> <br/><br/><br/><br/>
+      <div className="Criando">
 
-        <label>Texto</label>
-        <input type="text"
-        value={texto}
-        onChange={(evento) => setTexto(evento.target.value)}
-        />
+        <div className="titulo">
+          <label>Título</label>
+          <input type="text" 
+          value={titulo}
+          onChange={(evento) => setTitulo(evento.target.value)}
+          />
+        </div>
+
+        <div className="titulo">
+          <label>Texto</label>
+          <input type="text"
+          value={texto}
+          onChange={(evento) => setTexto(evento.target.value)}
+          />
+        </div>
+
 
         <button onClick={CriarPost}>Enviar</button>
       </div>

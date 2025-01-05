@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #f0f7da;
+}
+
+.Criando {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.titulo {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    width: 450px;
+    flex-direction: column;
+}
+
+.titulo input {
+    background-color: #65B8A6;
+    border: none;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.titulo label {
+    font-size: 2rem;
+} 
+
+.Criando button {
+    background-color: #1F192F;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
